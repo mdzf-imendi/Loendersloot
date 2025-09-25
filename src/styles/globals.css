@@ -40,7 +40,12 @@
   --sidebar-border: rgba(255, 255, 255, 0.1);
   --sidebar-ring: #FFFFFF;
   
-  /* Gradient colors for auth pages */
+  /* Red-orange gradient for specific widgets */
+  --widget-gradient: linear-gradient(90deg, #d8282f 70%, #ea4817);
+  --widget-gradient-start: #d8282f;
+  --widget-gradient-end: #ea4817;
+  
+  /* Blue gradient for auth pages */
   --auth-gradient-start: #5B7BA7;
   --auth-gradient-middle: #4A6FA5;
   --auth-gradient-end: #364A6D;
@@ -142,6 +147,30 @@
 
 .animate-float {
   animation: float 3s ease-in-out infinite;
+}
+
+/* Custom gradient utilities for specific widgets */
+.bg-widget-gradient {
+  background: var(--widget-gradient);
+}
+
+.text-widget-gradient {
+  background: var(--widget-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.border-widget-gradient {
+  border-image: var(--widget-gradient) 1;
+}
+
+.from-widget-start {
+  --tw-gradient-from: var(--widget-gradient-start);
+}
+
+.to-widget-end {
+  --tw-gradient-to: var(--widget-gradient-end);
 }
 
 /**

@@ -6,7 +6,7 @@ import { Checkbox } from "./ui/checkbox";
 import { Alert, AlertDescription } from "./ui/alert";
 import { Progress } from "./ui/progress";
 import { Eye, EyeOff, AlertCircle, CheckCircle, ArrowLeft, Users, Award, Zap, TrendingUp } from "lucide-react";
-import logoImage from 'figma:asset/59fb364822fadb28f07b26489a97e01352252e68.png';
+import logoImage from 'figma:asset/69eaccc699c7db7d440074854732978cd134262b.png';
 
 interface RegisterPageProps {
   onRegister: (userData: any) => void;

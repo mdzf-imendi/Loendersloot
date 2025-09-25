@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Alert, AlertDescription } from "./ui/alert";
 import { Eye, EyeOff, AlertCircle, Truck, Globe2, Shield, Clock, BarChart3, Users } from "lucide-react";
-import logoImage from 'figma:asset/59fb364822fadb28f07b26489a97e01352252e68.png';
+import logoImage from 'figma:asset/69eaccc699c7db7d440074854732978cd134262b.png';
 
 interface LoginPageProps {
   onLogin: (email: string, password: string) => void;
